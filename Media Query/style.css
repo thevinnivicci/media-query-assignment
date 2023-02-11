@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color:aquamarine;
+}
+ 
+h1 {
+    font-size: 50px;
+    text-align: center;
+    background-color: rgb(93, 93, 93);
+    padding: 15px 20px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+
+}
+.larger-screen,
+.laptop-screen,
+.tablet-screen,
+.mobile-screen {
+  font-size: 40px;
+  text-align: center;
+  display: none;
+}
+
+@media screen and (max-width: 1440px) {
+    body {
+        background-color: green;
+    }
+    .larger-screen {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        background-color: burlywood;
+    }
+    .laptop-screen {
+        display: block;
+    }
+    .larger-screen {
+        display: none;
+    }
+}
+
+@media screen and ( max-width: 768px) {
+    body {
+        background-color: aqua;
+
+    }
+    .tablet-screen {
+        display: block;
+    }
+    .laptop-screen {
+        display: none;
+    }
+    .larger-screen {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body{
+        background-color: brown;
+    }
+    .mobile-screen {
+        display: block;
+    }
+    .tablet-screen {
+        display: none;
+    }
+    .laptop-screen {
+        display: none;
+    }
+    .larger-screen {
+        display: none;
+    }
+
+}
